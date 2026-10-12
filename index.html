@@ -442,6 +442,24 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
   #island .btn{justify-content:center!important}
 }
 
+/* ===== v7: uncropped screenshots, uniform swipe frames, tighter phone spacing ===== */
+.proof-tile,.shot-card{padding:7px;background:#EFEAE2}
+.proof-tile img,.shot-card img{border-radius:13px}
+.proof-swipe .proof-tile,.proof-swipe .shot-card{aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;align-self:stretch}
+.proof-swipe .proof-tile img,.proof-swipe .shot-card img{width:100%;height:100%;object-fit:contain}
+body{padding-bottom:84px}
+@media(max-width:860px){
+  .hero{min-height:0;padding-block:40px 36px}
+  .scroll-hint{display:none}
+  .hero-proof{margin-top:30px}
+  section{padding-block:52px 56px}
+  section.tight{padding-block:40px 44px}
+  .manifesto{padding:4px 0 48px}
+  section:has(+ .manifesto){padding-bottom:24px}
+  .hero{padding-bottom:16px}
+  .hero + section{padding-top:36px}
+}
+
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .js .reveal{opacity:1;transform:none;filter:none}
@@ -463,9 +481,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
     <span class="hero-eyebrow">תפסיקי לגלול שעות בשביל מאצ'ים לא רלוונטיים</span>
     <h1 itemprop="name"><span class="line-mask"><span>איך לבנות פרופיל היכרויות שמייצר</span></span><span class="line-mask"><span class="mark">התאמות איכותיות</span></span><span class="line-mask"><span>שבאמת מתאימות לך</span></span></h1>
     <p class="lead reveal" itemprop="description">הרווק הממוצע מבזבז <span class="hl">10 שעות בשבוע</span> על אפליקציית היכרויות! זה מטורף!<br>שלא נדבר על השחיקה והאפקט הנפשי הרע שזה מייצר לך.<br>הזמן שלך שווה יותר, והתחושה שלך חשובה יותר.<br><strong>הגיע הזמן להשקיע פעם אחת כמו שצריך באפליקציה, כדי שתוכלי למחוק אותה כמה שיותר מהר.</strong></p>
-    <div class="btn-wrap reveal">
-      <a href="#הרשמה" class="btn magnetic" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a>
-    </div>
     <div class="hero-proof reveal">
       <div class="stat-card"><div class="stat-num gold-text" data-count="83">83</div><div class="stat-label">מתאמנים שביצעו</div></div>
       <div class="proof-solo"><img src="assets/IMG_8996.webp" alt="ביקורת מתאמן: הקורס הוא פשוט פתרון מעולה לכל מי שמתפזר באפליקציות ומבזבז שבועות שלמות על ריק" loading="lazy"></div>
@@ -501,7 +516,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
       <div class="proof-tile"><img src="assets/IMG_9008.jpg" alt="ביקורת מתאמן: שבועיים אחרי הקורס וכבר כמות התאמות שלא היו לי בחיים" loading="lazy"></div>
     </div>
 
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -546,7 +560,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
       <p>להמשיך לגלול באותה הדרך אומר לשרוף שעות על <strong>אפס תוצאות</strong>.<br>הגיע הזמן לעבוד חכם: בניתי לך את האסטרטגיה לבניית פרופיל מדויק, משיכת הגברים הנכונים, ומחיקת האפליקציה לצמיתות.</p>
     </div>
 
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -569,7 +582,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
       <div class="proof-tile"><img src="assets/IMG_9006.jpg" alt="ביקורת מתאמן: כלי ניתוח השיחות נתן לי כאפה טובה" loading="lazy"></div>
       <div class="proof-tile"><img src="assets/IMG_9010.jpg" alt="ביקורת מתאמן: יש כאן עומק פסיכולוגי אמיתי" loading="lazy"></div>
     </div>
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -616,7 +628,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
         <div class="check-text"><strong>גישה מלאה לכל החיים</strong>, כולל כל עדכון עתידי</div>
       </div>
     </div>
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -658,7 +669,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
         </div>
       </div></div>
     </div>
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -694,7 +704,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
         <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="check-text">את מוכנה לבזבז פחות זמן על האפליקציות, ויותר זמן בדייטים אמיתיים</div>
       </div>
-      <div class="btn-wrap" style="justify-content:flex-start"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
     </div>
   </div>
 </section>
@@ -710,7 +719,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
       <div class="proof-tile"><img src="assets/IMG_9011.jpg" alt="ביקורת מתאמן: השינוי בתגובות היה מיידי, נשים מציעות בעצמן לעבור לוואטסאפ" loading="lazy"></div>
       <div class="proof-tile"><img src="assets/IMG_9008.jpg" alt="ביקורת מתאמן: שבועיים אחרי הקורס וכבר כמות התאמות שלא היו לי בחיים" loading="lazy"></div>
     </div>
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -858,7 +866,6 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
       <p itemprop="text">תכתבי לי במייל liorochman@liorochman.co.il, ואני אענה לך אישית.</p>
       </div>
     </details>
-    <div class="btn-wrap reveal"><a href="#הרשמה" class="btn" title="עברי לטופס ההרשמה לקורס לבניית פרופיל היכרויות מדויק"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>בואי נבנה פרופיל שמייצר התאמות איכותיות</a></div>
   </div>
 </section>
 
@@ -937,7 +944,7 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
 
   // 6. main testimonial wall: 3 columns that drift on their own and can be dragged
   //    (mouse: drag up/down; touch: swipe sideways so page scrolling stays free)
-  var wall = document.getElementById('proofMain');
+  document.querySelectorAll('#proofMain, #proofMain2').forEach(function(wall){
   if (wall && innerWidth < 700){
     (function(sw){
       sw.className = 'proof-swipe';
@@ -1013,6 +1020,7 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
       requestAnimationFrame(tick);
     })(prev);
   }
+  });
 
   // 2. manifesto: wrap words so they light up with scroll progress
   var mt = document.getElementById('maniText'), words = [];
@@ -1059,8 +1067,8 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
     }
     if (island && priceCard){
       var pr = priceCard.getBoundingClientRect(), onPrice = pr.top < innerHeight && pr.bottom > 0;
-      var mr = mani ? mani.getBoundingClientRect() : null, onMani = mr && mr.top < innerHeight * .5 && mr.bottom > innerHeight * .5;
-      var show = scrollY > innerHeight * .9 && !onPrice && !onMani;
+      var typing = document.activeElement && /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
+      var show = !typing;
       island.classList.toggle('show', show);
       island.setAttribute('aria-hidden', show ? 'false' : 'true');
       island.querySelector('a').tabIndex = show ? 0 : -1;
@@ -1068,6 +1076,7 @@ footer.site{padding:44px 20px 120px;text-align:center;color:var(--cream-62);font
   }
   addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
   addEventListener('resize', onScroll);
+  document.addEventListener('focusin', onScroll); document.addEventListener('focusout', function(){ setTimeout(onScroll, 50); });
   onScroll();
 })();
 
