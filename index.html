@@ -1095,6 +1095,8 @@ fbq('track','ViewContent',{content_name:'digital_course',currency:'ILS',value:17
   // ── Price tiers + checkout: logic unchanged from the live page ──
   var PRICE_TIER_KEY = 'lior_price_tier_start';
   var PRICE_TIER_DURATION_MS = 48 * 60 * 60 * 1000; // 48h — step 2 window
+  // Webinar 2.11: one shared deadline for every visitor, same moment the bonus closes
+  var WEBINAR_DEADLINE_MS = new Date('2026-11-04T23:59:59+02:00').getTime();
 
   function getPriceTierStart(){
     var start = localStorage.getItem(PRICE_TIER_KEY);
@@ -1106,6 +1108,7 @@ fbq('track','ViewContent',{content_name:'digital_course',currency:'ILS',value:17
   }
 
   function isTier3Active(){
+    if (Date.now() < WEBINAR_DEADLINE_MS) return false;
     return (Date.now() - getPriceTierStart()) >= PRICE_TIER_DURATION_MS;
   }
 
@@ -1125,7 +1128,8 @@ fbq('track','ViewContent',{content_name:'digital_course',currency:'ILS',value:17
 
     var timer;
     function render(){
-      var remaining = PRICE_TIER_DURATION_MS - (Date.now() - start);
+      var now = Date.now();
+      var remaining = now < WEBINAR_DEADLINE_MS ? WEBINAR_DEADLINE_MS - now : PRICE_TIER_DURATION_MS - (now - start);
       if (remaining <= 0){
         countdownLabel.style.display = 'none';
         countdownGrid.style.display = 'none';
